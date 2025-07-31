@@ -4,7 +4,7 @@ This project applies **Physics-Informed Neural Networks (PINNs)** to solve bound
 
 ---
 
-## 🧩 Problem Description
+## Problem Description
 
 We consider the PDE:
 
@@ -14,10 +14,9 @@ $$
 
 - **1D**: $u(x) = \sin(m\pi x)$
 - **2D**: $u(x, y) = \sin(m\pi x)\sin(n\pi y)$
-- 
 ---
 
-## 🛠️ Methodology
+## Methodology
 
 - A fully-connected neural network (FCNN) is trained using PyTorch.
 - The total loss function is composed of:
@@ -27,13 +26,13 @@ $$
   - Uniformly distributed **interior** and **boundary** points.
 ---
 
-## 📂 Project Structure
+## Structure
 
 - `PINNs.ipynb`: main notebook solving 1D and 2D PDEs
 
 ---
 
-## 🧠 Observations
+## Observations
 
 - PINNs work reasonably well for low-frequency solutions.
 - For oscillatory PDEs (higher m or n):
