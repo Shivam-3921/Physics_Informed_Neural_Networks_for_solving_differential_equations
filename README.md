@@ -1,4 +1,4 @@
-# Physics-Informed Neural Networks (PINNs) for Solving PDEs on Square Domains
+# Physics-Informed Neural Networks (PINNs) for Solving PDEs
 
 This project applies **Physics-Informed Neural Networks (PINNs)** to solve boundary value problems for second-order partial differential equations (PDEs) defined on square domains in 1D and 2D. It demonstrates how PINNs can approximate smooth solutions effectively, while struggling with oscillatory solutions due to increased complexity.
 
