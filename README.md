@@ -14,7 +14,7 @@ $$
 
 - **1D**: $u(x) = \sin(m\pi x)$
 - **2D**: $u(x, y) = \sin(m\pi x)\sin(n\pi y)$
-- **1D Advection**: $u_t + 0\frac{1}{2}u_x = 0$, solved with a discrete-time PINN using RK4 time stepping
+- **1D Advection**: $u_t +\frac{1}{2}u_x = 0$, solved with a discrete-time PINN using RK4 time stepping
 ---
 
 ## Methodology
