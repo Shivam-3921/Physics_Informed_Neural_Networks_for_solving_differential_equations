@@ -6,14 +6,14 @@ This project applies **Physics-Informed Neural Networks (PINNs)** to solve bound
 
 ## Problem Description
 
-We consider the PDE:
+- We consider the PDE:
 
 $$
 -\Delta u + u = f(x, y), \quad \text{in } \Omega = (0,1)^d, \quad u = 0 \text{ on } \partial \Omega
 $$
 
-- **1D**: $u(x) = \sin(m\pi x)$
-- **2D**: $u(x, y) = \sin(m\pi x)\sin(n\pi y)$
+  - **1D**: $f(x) = (m^2\pi^2+1)\sin(m\pi x)$
+  - **2D**: $f(x) = (m^2\pi^2+n^2\pi^2+1)\sin(m\pi x)\sin(n\pi y)$
 - **1D Advection**: $u_t +\frac{1}{2}u_x = 0$, solved with a discrete-time PINN using RK4 time stepping
 ---
 
@@ -21,7 +21,7 @@ $$
 
 - A fully-connected neural network (FCNN) is trained using PyTorch.
 - The total loss function is composed of:
-  - **Physics loss**: residual of the PDE at interior collocation points.
+  - **Physics loss**: residual of the PDE at uniformly-spaced interior collocation points.
   - **Boundary loss**: squared error enforcing Dirichlet boundary conditions.
 - Training points:
   - Uniformly distributed **interior** and **boundary** points.
