@@ -6,14 +6,9 @@ This project applies **Physics-Informed Neural Networks (PINNs)** to solve bound
 
 ## Problem Description
 
-- We consider the PDE:
-
-$$
--\Delta u + u = f(x, y), \quad \text{in } \Omega = (0,1)^d, \quad u = 0 \text{ on } \partial \Omega
-$$
-
-  - **1D**: $f(x) = (m^2\pi^2+1)\sin(m\pi x)$
-  - **2D**: $f(x) = (m^2\pi^2+n^2\pi^2+1)\sin(m\pi x)\sin(n\pi y)$
+- We consider the PDE: $-\Delta u + u = f(x, y)$ in $\Omega = (0,1)^d$ with zero boundary conditions and
+    - **1D**: $f(x) = (m^2\pi^2+1)\sin(m\pi x)$
+    - **2D**: $f(x) = (m^2\pi^2+n^2\pi^2+1)\sin(m\pi x)\sin(n\pi y)$
 - **1D Advection**: $u_t +\frac{1}{2}u_x = 0$, solved with a discrete-time PINN using RK4 time stepping
 ---
 
